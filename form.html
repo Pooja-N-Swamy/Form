@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            
+            <link href="css/bootstrap.min.css" rel="stylesheet">
+            <link href="css/font-awesome.css" rel="stylesheet">
+            <link href="css/icon.css" rel="stylesheet">
+            <link href="css/style.css" rel="stylesheet" type="text/css">
+        </head>
+
+        <body>
+           <div class="container-fluid">
+                <header class="row page-header clearfix">
+                    <div class="col-md-4 col-sm-7">
+                         <h1 class="company-name">SAMPLE APPLICATION</h1>
+                    </div>
+                    <div class="col-md-8 col-sm-6">
+                        <ul class="pull-right list-inline signin">
+                            <li>
+                               <a href="#">Signin
+                                <i class="fa fa-sign-in" aria-hidden="true"></i></a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+               </header>
+                <form id="myform">
+                    <!--Progressbar-->
+                    <ul class="progressbar">
+                        <li class="active">Step 1</li>
+                        <li id="step2">Step 2</li>
+                        <li id="step3" class="marginbottom">Step 3</li>
+                    </ul>
+                        
+                    <!--Fieldset-->
+                    <fieldset id="phase1">
+                        <h1 class="title">Create Your Account</h1>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6 name">
+                                <input type="text" class="form-control " placeholder="Firstname" name="firstName" id="fname">
+                            </div>
+                            <div class="form-group col-md-6 col-sm-6">
+                                <input type="text" class="form-control" placeholder="Lastname" name="lastName" id="lname">
+                            </div>
+                        </div>
+                        <p class="ename red"> Please enter FullName</p>
+                        <div class="form-group" >
+                            <div class="row">
+                                <div class="form-group col-md-4" id=select >
+                                    <select class="form-control" name="code">
+                                        <option value="0">00</option>
+                                        <option value="1">00</option>
+                                        <option value="2">00</option>
+                                        <option value="3">00</option>
+                                        <option value="4">00</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-8">
+                                    <input type="text" class="form-control" placeholder="Contact Number" name="contactNumber" id="contact_number">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="ecode red">select code</p>
+                        <p class="enum red"> This field is empty/Should be Number</p>
+                            <div class="form-group">
+                                <input type="text" name="email" placeholder="Email" class="form-email form-control width" name="email" id="email" required>
+                            </div>
+                         <p class="eemail red"> Invalid Email-id</p>
+                            <div class="form-group">
+                                <select class="form-control width" name="gender" id="selectgender">
+                                    <option value="0">Gender</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                </select>
+                            </div>
+                        <p class="egender red">select gender</p>
+                               <input type="button" class="next action-button" value="Next">
+                        </fieldset>
+                           
+                        <fieldset id="phase2">
+                            <div class="form-group password password2">
+                                <input type="password" name="pass" placeholder="Password" class="width form-control" name="password1" id="pass">
+                            </div>
+                            <div class="form-group password">
+                                <input type="password" name="cpass" placeholder="Confirm Password" class="width form-control " name="password2" id="cpass">
+                            </div>
+                            <p class="epass red">Please provide a password</p>
+                            <p class="minpass red">Your password must be at least 5 characters long</p>
+                            <p class="red matchpass"> Password didnt match</p>
+                            
+                            <button type="button" class="btn btn-success previous action-button">Previous</button>
+                            <button type="button" class="btn btn-success next action-button">Next</button>
+                        </fieldset>
+                        <fieldset id="phase3">
+                            <textarea class="form-control textarea" placeholder="Type Your Message Here"></textarea>
+                            <button type="button" class=" previous action-button">Previous</button>
+                            <button type="button" class="action-button submit" value="Submit">Submit</button>
+                        </fieldset>
+                        <fieldset id="submit">
+                            <h1>YOUR DATA HAS BEEN SUCCESSFULLY SUBMITTED</h1>
+                        </fieldset>
+                   </form>
+               </div>
+            <script src="js/jquery.min.js"></script>
+            <script src="js/script.js"></script>
+        </body>
+    </html>
