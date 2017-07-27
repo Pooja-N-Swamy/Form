@@ -152,6 +152,13 @@ $(function(){
         
     });
     
+    $('#phase3 .previous').click(function(){
+            $('#phase2').css("display","block");
+            $('#phase3').css("display","none");
+            $('#step3').removeClass("active");
+        
+    });
+    
     $('#phase3 .submit').click(function(){
         $('#phase1').css("display","none");
         $('#phase2').css("display","none");

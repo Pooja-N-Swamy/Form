@@ -5,7 +5,8 @@
 }
 body{
     font-family: Verdana;
-    background-color: #A7C196;
+    height: 100vh;
+    background: linear-gradient(to top right, red,yellow);
 }
 .container-fluid{
     padding: 0;
