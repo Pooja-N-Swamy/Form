@@ -20,15 +20,19 @@ $(function(){
             var num = $("#contact_number").val();
             var email = $("#email").val();
 
-            if(fname == '' || fname == ''){
+            if(fname == '' || lname == ''){
                 $('.ename').show();
                 if(!fname){
                     $('#fname').addClass("redBorder");
+                     $('#fname').focus();
+                    return false;
                 }
                 if(!lname){
+                    $('#fname').removeClass("redBorder");
                     $('#lname').addClass("redBorder");
+                    $('lname').focus();
                 }
-                $('#fname').focus();
+               
                 return false;
             }else{
                 $('.ename').hide();
